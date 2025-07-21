@@ -615,3 +615,131 @@ body::before {
     position: relative;
     overflow: hidden;
 } 
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.projects .container {
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 136, 0.15);
+    padding: 4rem 2rem;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(0, 255, 136, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #232323 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 255, 136, 0.08);
+    border: 1px solid rgba(0, 255, 136, 0.12);
+    padding: 2rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0, 255, 136, 0.18);
+    border-color: #00ff88;
+}
+
+.project-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,255,136,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(0,255,136,0.08);
+}
+
+.project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.project-card h3 {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.3rem 0;
+    text-align: center;
+}
+
+.project-card a {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 1rem;
+    word-break: break-all;
+    text-align: center;
+    margin-top: 0.2rem;
+    transition: color 0.2s;
+}
+
+.project-card a:hover {
+    color: #00cc6a;
+    text-decoration: underline;
+} 
+
+/* Skills Grid and Card Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, #16222a 0%, #1a1a1a 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 255, 136, 0.08);
+    border: 1px solid rgba(0, 255, 136, 0.12);
+    padding: 2rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+    position: relative;
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 255, 136, 0.18), 0 0 0 2px #00ff88;
+    border-color: #00ff88;
+    background: linear-gradient(135deg, #1a1a1a 0%, #16222a 100%);
+}
+
+.skill-card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skill-card p {
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    text-align: center;
+    margin: 0;
+} 
