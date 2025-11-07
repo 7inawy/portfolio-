@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Zyad Elhenawy - E-commerce Operations Specialist, CMS Expert, and UI/UX Designer. Expert in Shopify, WooCommerce, and e-commerce store management.">
+    <meta name="theme-color" content="#00ff88">
     <title>Zyad Elhenawy - E-commerce Portfolio</title>
     <link rel="stylesheet" href="portfolio-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,8 +18,8 @@
                 <div class="logo">
                     <h2>Zyad Elhenawy</h2>
                 </div>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <ul class="nav-menu">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle mobile menu">
+                <ul class="nav-menu" role="navigation" aria-label="Main navigation">
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Home</a>
                     </li>
@@ -40,10 +42,10 @@
                         <a href="#languages" class="nav-link">Languages</a>
                     </li>
                 </ul>
-                <label for="menu-toggle" class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <label for="menu-toggle" class="hamburger" aria-label="Mobile menu button">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
                 </label>
             </div>
         </nav>
@@ -63,12 +65,13 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Zyad Elhenawy</h1>
-                    <h2>E-commerce Operations Specialist | CMS Expert | UI/UX Designer</h2>
-                    <p>Egypt | +20 1024299309 | zyadelhenawy0@gmail.com | <a href="https://www.linkedin.com/in/zyad-elhenawy-117813167/" target="_blank" style="color:#00ff88;">LinkedIn</a></p>
+                    <h2>Operations Manager & E-Commerce Specialist | Shopify Expert | Marketplace Integration</h2>
+                    <p style="margin-bottom: 0.5rem; opacity: 1; color: #00ff88; font-weight: 500;">Currently: Operations Manager @ Nutzzi (El Shahed Production House)</p>
+                    <p>Egypt | +20 1024299309 | zyadelhenawy0@gmail.com | <a href="https://www.linkedin.com/in/zyad-elhenawy-117813167/" target="_blank" rel="noopener">LinkedIn</a></p>
                 </div>
                 <div class="hero-image">
                     <div class="profile-circle">
-                        <img src="zyad-photo.jpg" alt="Zyad Elhenawy - E-commerce Specialist" class="profile-photo">
+                        <img src="zyad-photo.jpg" alt="Zyad Elhenawy - E-commerce Specialist" class="profile-photo" loading="eager">
                     </div>
                 </div>
             </div>
@@ -83,7 +86,7 @@
             </div>
             <div class="about-content">
                 <div class="about-info">
-                    <p>Dynamic e-commerce specialist and UI/UX designer with a strong background in setting up and managing online stores using CMS platforms such as Shopify and WooCommerce. Founder of Rabih, a SaaS e-commerce builder, with end-to-end experience in technical development, store optimization, and product management. Proficient in HTML, CSS, and JavaScript, with strong knowledge of Excel, Google Workspace, Canva, and DNS/email configuration. Adept at creating responsive, user-centered designs and improving online store performance through strategic planning and user experience analysis.</p>
+                    <p>Dynamic e-commerce specialist and Operations Manager with extensive experience in building and managing complete e-commerce ecosystems. Currently serving as Operations Manager & E-Commerce Specialist at Nutzzi (El Shahed Production House), where I built and launched the Shopify store, achieved first-page Google ranking for competitive keywords, and integrated operations across Amazon, Noon, Jumia, Instashop, and Talabat. Founder of Rabih, a SaaS e-commerce builder, with end-to-end experience in technical development, store optimization, SEO, and marketplace management. Expert in Shopify, WooCommerce, and multi-platform integration, with strong proficiency in HTML, CSS, JavaScript, Google Analytics, and operational workflow optimization. Proven track record of driving sales growth, improving operational efficiency, and delivering premium brand experiences across Egypt's leading e-commerce platforms.</p>
                 </div>
             </div>
         </div>
@@ -97,11 +100,11 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-card"><h3>Web Development</h3><p>HTML5, CSS3, JavaScript, Supabase, Git/GitHub</p></div>
-                <div class="skill-card"><h3>CMS Platforms</h3><p>Shopify, WooCommerce, Odoo ERP, Rabih (Proprietary CMS)</p></div>
-                <div class="skill-card"><h3>Design Tools</h3><p>Figma, Canva, Adobe Illustrator, Adobe Photoshop, Responsive Design</p></div>
-                <div class="skill-card"><h3>Email & Admin Tools</h3><p>Google Workspace, Zoho, DNS/Domain Setup</p></div>
-                <div class="skill-card"><h3>Data & Analysis</h3><p>Microsoft Excel, Google Sheets, Google Analytics</p></div>
-                <div class="skill-card"><h3>Other</h3><p>Version Control, SEO Principles, CMS Page & Product Management</p></div>
+                <div class="skill-card"><h3>CMS Platforms</h3><p>Shopify, WooCommerce, Odoo ERP, Rabih (Proprietary CMS), Salla</p></div>
+                <div class="skill-card"><h3>Marketplace Management</h3><p>Amazon Seller Central, Noon Vendor Portal, Jumia, Instashop, Talabat, B2B2C Operations</p></div>
+                <div class="skill-card"><h3>Design Tools</h3><p>Figma, Canva, Adobe Illustrator, Adobe Photoshop, Responsive Design, Product Photography</p></div>
+                <div class="skill-card"><h3>Analytics & SEO</h3><p>Google Analytics, Shopify Analytics, SEO Optimization, Keyword Research, Content Strategy</p></div>
+                <div class="skill-card"><h3>Operations & Admin</h3><p>Microsoft Excel, Google Workspace, Zoho, DNS/Domain Setup, Workflow Optimization, Inventory Management</p></div>
             </div>
         </div>
     </section>
@@ -114,48 +117,55 @@
                 <p>Selected e-commerce stores I've built or managed</p>
             </div>
             <div class="projects-grid">
+                <!-- Featured Project - Nutzzi -->
+                <div class="project-card featured-project">
+                    <div class="project-icon"><img src="Nutzzi logo.png" alt="Nutzzi Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+                    <h3>Nutzzi (Current Role)</h3>
+                    <p style="color:#00ff88; font-size:0.9rem; margin:0.5rem 0;">Operations Manager & E-Commerce Specialist</p>
+                    <a href="https://nutzzi-eg.com/" target="_blank" rel="noopener">nutzzi-eg.com</a>
+                </div>
                 <!-- Salla Stores -->
                 <div class="project-card">
-                    <div class="project-icon"><img src="happy feet.png" alt="Happy Feet" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="happy feet.png" alt="Happy Feet Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Happy Feet (Salla)</h3>
-                    <a href="https://happy-feet-sa.com/" target="_blank">happy-feet-sa.com</a>
+                    <a href="https://happy-feet-sa.com/" target="_blank" rel="noopener">happy-feet-sa.com</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><img src="go top.png" alt="Go Top" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="go top.png" alt="Go Top Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Go Top (Salla)</h3>
-                    <a href="https://goo-topp.com/" target="_blank">goo-topp.com</a>
+                    <a href="https://goo-topp.com/" target="_blank" rel="noopener">goo-topp.com</a>
+                </div>
+                <!-- Wamdah Store -->
+                <div class="project-card">
+                    <div class="project-icon"><img src="Wamdah Logo White Version (1).png" alt="Wamdah Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+                    <h3>Wamdah (Wuilt)</h3>
+                    <a href="https://wamdah-eg.com/" target="_blank" rel="noopener">wamdah-eg.com</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><img src="deraah.png" alt="Deraah" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="deraah.png" alt="Deraah Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Deraah (Salla)</h3>
-                    <a href="https://www.deraahstore.com/ar_sa" target="_blank">deraahstore.com/ar_sa</a>
+                    <a href="https://www.deraahstore.com/ar_sa" target="_blank" rel="noopener">deraahstore.com/ar_sa</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><img src="abjd.png" alt="Abjd" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="abjd.png" alt="Abjd Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Abjd (Salla)</h3>
-                    <a href="https://abjd.store/" target="_blank">abjd.store</a>
+                    <a href="https://abjd.store/" target="_blank" rel="noopener">abjd.store</a>
                 </div>
                 <!-- Shopify Stores -->
                 <div class="project-card">
-                    <div class="project-icon"><img src="ariika.jpg" alt="Ariika" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="ariika.jpg" alt="Ariika Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Ariika (Shopify)</h3>
-                    <a href="https://ariika.com/" target="_blank">ariika.com</a>
+                    <a href="https://ariika.com/" target="_blank" rel="noopener">ariika.com</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><img src="Fashion Hub.jpg" alt="Fashion Hub" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="Fashion Hub.jpg" alt="Fashion Hub Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Fashion Hub (Shopify)</h3>
-                    <a href="https://fashionhubeg.com/" target="_blank">fashionhubeg.com</a>
+                    <a href="https://fashionhubeg.com/" target="_blank" rel="noopener">fashionhubeg.com</a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><img src="Amin.webp" alt="Amin Petshop" style="width:100%;height:100%;object-fit:contain;"></div>
+                    <div class="project-icon"><img src="Amin.webp" alt="Amin Petshop Logo" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
                     <h3>Amin Petshop (Shopify)</h3>
-                    <a href="https://aminpetshop.com/" target="_blank">aminpetshop.com</a>
-                </div>
-                <!-- Wuilt Stores -->
-                <div class="project-card">
-                    <div class="project-icon"><img src="Didos logo-01.png" alt="Didos" style="width:100%;height:100%;object-fit:contain;"></div>
-                    <h3>Didos (Wuilt)</h3>
-                    <a href="https://didosegy.com/en" target="_blank">didosegy.com/en</a>
+                    <a href="https://aminpetshop.com/" target="_blank" rel="noopener">aminpetshop.com</a>
                 </div>
             </div>
         </div>
@@ -185,8 +195,9 @@
             <div class="about-content">
                 <div class="about-info">
                     <ul style="color:#00ff88;">
-                        <li>Winner, Gen Z Startup Competition (2024): Led Rabih to win funding through effective pitching.</li>
-                        <li>President, Student Union (2024–2025): Demonstrated leadership, teamwork, and coordination skills.</li>
+                        <li><strong>Operations Manager, Nutzzi (El Shahed Production House):</strong> Built complete e-commerce ecosystem from scratch on Shopify, integrated operations across Amazon, Noon, Jumia, Instashop, and Talabat. Achieved #1 Google ranking for "nuts" in Egypt through advanced SEO strategies.</li>
+                        <li><strong>Winner, Gen Z Startup Competition (2024):</strong> Led Rabih to win funding through effective pitching and business strategy presentation.</li>
+                        <li><strong>President, Student Union (2024–2025):</strong> Demonstrated leadership, teamwork, and coordination skills managing university-wide initiatives.</li>
                     </ul>
                 </div>
             </div>

@@ -185,4 +185,76 @@ document.addEventListener('DOMContentLoaded', function() {
         trails.forEach(trail => trail.element.style.display = 'none');
         document.body.style.cursor = 'auto';
     }
+    
+    // Mobile menu functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Close mobile menu when a nav link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+            }
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768 && menuToggle.checked) {
+            const navContainer = document.querySelector('.nav-container');
+            if (!navContainer.contains(e.target)) {
+                menuToggle.checked = false;
+            }
+        }
+    });
+    
+    // Handle window resize - update cursor visibility and reset menu
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            if (window.innerWidth <= 768) {
+                cursor.style.display = 'none';
+                trails.forEach(trail => trail.element.style.display = 'none');
+                document.body.style.cursor = 'auto';
+            } else {
+                cursor.style.display = 'block';
+                trails.forEach(trail => trail.element.style.display = 'block');
+                document.body.style.cursor = 'none';
+                menuToggle.checked = false;
+            }
+        }, 250);
+    });
+    
+    // Prevent body scroll when mobile menu is open
+    if (menuToggle) {
+        menuToggle.addEventListener('change', () => {
+            if (menuToggle.checked && window.innerWidth <= 768) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    
+    // Smooth scroll with offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 }); 
